@@ -3,13 +3,11 @@ import ReactDOM from 'react-dom';
 
 
 
-import Dashboard from './pages/Dashboard';
-import List from './pages/List';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Dashboard/>
-    <List/>
+    <App/>
   </React.StrictMode>,
   document.getElementById('root')
 );
