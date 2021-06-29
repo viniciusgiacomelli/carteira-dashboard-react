@@ -33,8 +33,6 @@ interface IData{
 const List: React.FC <IRouteParams> =  ({ match }) => {
 
     const [data, setData] = useState <IData[]> ([]);
-    const [monthSelected, setMonthSelected] = useState<string>(String(new Date().getMonth() + 1));
-    const [yearSelected, setYearSelected] = useState<string>(String(new Date().getFullYear()));
 
     const { type } = match.params;
 
@@ -103,8 +101,8 @@ const List: React.FC <IRouteParams> =  ({ match }) => {
                 tagColor: item.frequency === 'recorrente' ? '#4E41F0' : '#E44C4E'
             }
         })
-        setData(formattedDate);
-    },[listData, monthSelected, yearSelected, data.length]);
+        setData(response);
+    },[]);
 
     return (
         <Container>
