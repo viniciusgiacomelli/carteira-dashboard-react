@@ -33,8 +33,8 @@ interface IData{
 const List: React.FC <IRouteParams> =  ({ match }) => {
 
     const [data, setData] = useState <IData[]> ([]);
-    const [monthSelected, setMonthSelected] = useState<string>(String(new Date().getMonth() + 1));
-    const [yearSelected, setYearSelected] = useState<string>(String(new Date().getFullYear()));
+    const [monthSelected, setMonthSelected] = useState<number>(new Date().getMonth() + 1);
+    const [yearSelected, setYearSelected] = useState<number>(new Date().getFullYear());
     const [selectedFrequency, setSelectedFrequency] = useState(['recorrente','eventual']);
 
     const { type } = match.params;
@@ -44,7 +44,7 @@ const List: React.FC <IRouteParams> =  ({ match }) => {
     },[type]);
 
     const lineColor = useMemo(() => {
-        return type === 'entry-balance' ? '#F7931B':'#E44C4E'
+        return type === 'entry-balance' ? '#4E41F0':'#E44C4E'
     },[type]);
 
     const listData = useMemo(() => {
@@ -95,13 +95,31 @@ const List: React.FC <IRouteParams> =  ({ match }) => {
 
     }
 
+    const handleMonthSelected = (month:string) => {
+        try{
+            const parseMonth = Number(month);
+            setMonthSelected(parseMonth);
+        }catch(error){
+            throw new Error('invalid month value. 0 - 24 Accepted');
+        }
+    }
+
+    const handleYearSelected = (year:string) => {
+        try{
+            const parseYear = Number(year);
+            setYearSelected(parseYear);
+        }catch(error){
+            throw new Error('invalid year value. Only number accepted');
+        }
+    }
+
 
     useEffect(() => {
 
         const filteredData = listData.filter(item => {
             const date = new Date( item.date);
-            const month = String( date.getMonth() +1 );
-            const year = String ( date.getFullYear());
+            const month = date.getMonth() +1 ;
+            const year = date.getFullYear();
 
             return month === monthSelected && year === yearSelected && selectedFrequency.includes(item.frequency);
         });
@@ -123,8 +141,16 @@ const List: React.FC <IRouteParams> =  ({ match }) => {
     return (
         <Container>
             <ContentHeader title={title} lineColor={lineColor}>
-                <SelectInput options={months} onChange={(e) => setMonthSelected(e.target.value)} defaultValue={monthSelected}/>
-                <SelectInput options={years} onChange={(e) => setYearSelected(e.target.value)} defaultValue={yearSelected}/>
+                <SelectInput 
+                    options={months} 
+                    onChange={(e) => handleMonthSelected(e.target.value)} 
+                    defaultValue={monthSelected}
+                />
+                <SelectInput 
+                    options={years} 
+                    onChange={(e) => handleYearSelected(e.target.value)} 
+                    defaultValue={yearSelected}
+                />
             </ContentHeader>
 
             <Filters>
