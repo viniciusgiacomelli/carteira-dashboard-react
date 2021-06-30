@@ -2,12 +2,16 @@ import React, { useState, useMemo } from 'react';
 
 import ContentHeader from '../../components/ContentHeader';
 import SelectInput from '../../components/SelectInput';
+import WalletBox from '../../components/WalletBox';
 
 import { gains } from '../../repositories/gains';
 import { expenses } from '../../repositories/expenses';
-
-import { Container } from './styles';
 import { listOfMonths } from '../../utils/months';
+
+import { 
+    Container,
+    Content,
+ } from './styles';
 
 
 const Dashboard: React.FC = () => {
@@ -15,13 +19,7 @@ const Dashboard: React.FC = () => {
     const [monthSelected, setMonthSelected] = useState<number>(new Date().getMonth() + 1);
     const [yearSelected, setYearSelected] = useState<number>(new Date().getFullYear());
     
-    const options = [
-        {value: 'Vinicius', label: 'Vinicius'},
-        {value: 'Maria', label: 'Maria'},
-        {value: 'Joaquim', label: 'Joaquim'}
-    ]
-
-    
+        
     const years = useMemo(() => {
         let uniqueYears: number[] = [];
 
@@ -73,8 +71,9 @@ const Dashboard: React.FC = () => {
 
     return (
         <Container>
+
             <ContentHeader title="Dashboard" lineColor="#F7931B">
-            <SelectInput 
+                <SelectInput 
                     options={months} 
                     onChange={(e) => handleMonthSelected(e.target.value)} 
                     defaultValue={monthSelected}
@@ -84,7 +83,37 @@ const Dashboard: React.FC = () => {
                     onChange={(e) => handleYearSelected(e.target.value)} 
                     defaultValue={yearSelected}
                 />
+
             </ContentHeader>
+
+            <Content>
+
+                <WalletBox
+                    title="saldo"
+                    amount={150.00}
+                    footerlabel="Atualizado com base na movimentação"
+                    icon="dolar" 
+                    color="#4E41F0"
+                />
+
+                <WalletBox
+                    title="entradas"
+                    amount={5000.00}
+                    footerlabel="Atualizado com base na movimentação"
+                    icon="arrowUp" 
+                    color="#F7931B"
+                />
+
+                <WalletBox
+                    title="saída"
+                    amount={4850.00}
+                    footerlabel="Atualizado com base na movimentação"
+                    icon="arrowDown" 
+                    color="#E44C4E"
+                />
+
+            </Content>
+
         </Container>
     );
 }
