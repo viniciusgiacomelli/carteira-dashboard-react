@@ -4,6 +4,7 @@ import ContentHeader from '../../components/ContentHeader';
 import SelectInput from '../../components/SelectInput';
 import WalletBox from '../../components/WalletBox';
 import MessageBox from '../../components/MessageBox';
+import PieChart from '../../components/PieChart';
 
 import { gains } from '../../repositories/gains';
 import { expenses } from '../../repositories/expenses';
@@ -112,7 +113,7 @@ const Dashboard: React.FC = () => {
                 footerText:"Corte os gastos desnecessários",
                 icon: sadImg
             }
-        }else if(totalBalance == 0){
+        }else if(totalBalance === 0){
             return{
                 title:"Ufa!",
                 description:"Neste mês você gastou tanto quanto ganhou",
@@ -199,6 +200,8 @@ const Dashboard: React.FC = () => {
                     footerText={message.footerText}
                     icon={message.icon}
                 />
+
+                <PieChart></PieChart>
 
             </Content>
 
