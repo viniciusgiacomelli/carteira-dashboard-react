@@ -9,7 +9,7 @@ import {gains} from '../../repositories/gains';
 import {expenses} from '../../repositories/expenses';
 import formatCurrency from '../../utils/formatCurrency';
 import formatDate from '../../utils/formatDate';
-import {listOfMonths} from '../../utils/months';
+import listOfMonths from '../../utils/months';
 
 import { Container, Content, Filters } from './styles';
 
@@ -75,10 +75,10 @@ const List: React.FC <IRouteParams> =  ({ match }) => {
     },[listData]);
 
     const months = useMemo(() => {
-        return listOfMonths.map(item => {
+        return listOfMonths.map((month, index) => {
             return{
-                value: item.value,
-                label: item.label,
+                value: index+1,
+                label: month,
             }
         });
     },[]);

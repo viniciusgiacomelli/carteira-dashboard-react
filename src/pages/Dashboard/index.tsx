@@ -8,7 +8,7 @@ import PieChartBox from '../../components/PieChartBox';
 
 import { gains } from '../../repositories/gains';
 import { expenses } from '../../repositories/expenses';
-import { listOfMonths } from '../../utils/months';
+import  listOfMonths  from '../../utils/months';
 
 import happyImg from '../../assets/happy.svg';
 import sadImg from '../../assets/sad.svg';
@@ -49,10 +49,10 @@ const Dashboard: React.FC = () => {
 
 
     const months = useMemo(() => {
-        return listOfMonths.map(item => {
+        return listOfMonths.map((month, index) => {
             return{
-                value: item.value,
-                label: item.label,
+                value: index+1,
+                label: month,
             }
         });
     },[]);
