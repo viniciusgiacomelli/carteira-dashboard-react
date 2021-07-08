@@ -56,8 +56,8 @@ const HistoryBox : React.FC <IHistoryBoxProps> = ({
         <ChartContainer>
             <ResponsiveContainer>
                 <LineChart data={data} margin={{ top:5, right:20, left:20, bottom:5}}>
-                    <CartesianGrid strokeDasharray="3 3" stroke="#cecece" />
-                    <XAxis dataKey="month" stroke="#cecece" />
+                    <CartesianGrid strokeDasharray="3 3" stroke="" />
+                    <XAxis dataKey="month" stroke="" />
                     <Tooltip formatter={(value:number) => formatCurrency(value)}/>
                     <Line
                         type="monotone"
