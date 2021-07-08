@@ -249,6 +249,46 @@ const Dashboard: React.FC = () => {
 
     },[monthSelected, yearSelected]);
 
+    const relationGainsRecorrentVersusEventual = useMemo(() => {
+        let amountRecurrent =0;
+        let amountEventual = 0;
+
+        gains
+        .filter((gain) => {
+            const date = new Date(gain.date);
+            const year = date.getFullYear();
+            const month = date.getMonth()+1;
+
+            return month === monthSelected && year === yearSelected;
+        })
+        .forEach((gain) => {
+            if(gain.frequency === 'recorrente'){
+                return amountRecurrent += Number(gain.amount);
+            }
+            if(gain.frequency === 'eventual'){
+                return amountEventual += Number(gain.amount);
+            }
+        });
+
+        const total = amountEventual + amountRecurrent;
+
+        return[
+            {
+                name: 'Recorrentes',
+                amount: amountRecurrent,
+                percent: Number(((amountRecurrent/total)*100).toFixed(1)),
+                color: "#F7931B"
+            },
+            {
+                name: 'Eventual',
+                amount: amountEventual,
+                percent: Number(((amountEventual/total)*100).toFixed(1)),
+                color: "#E44C4E"
+            },
+        ];
+
+    },[monthSelected, yearSelected]);
+
 
     const handleMonthSelected = (month:string) => {
         try{
@@ -329,8 +369,13 @@ const Dashboard: React.FC = () => {
                 />
 
                 <BarChartBox 
-                title="Saída"
+                title="Saídas"
                 data={relationExpensesRecorrentVersusEventual}
+                />
+
+                <BarChartBox 
+                title="Entradas"
+                data={relationGainsRecorrentVersusEventual}
                 />
 
             </Content>
