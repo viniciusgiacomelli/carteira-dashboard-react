@@ -32,7 +32,7 @@ export const Filters = styled.div`
 
     }
 
-        .tag-filter-current::after{
+        .tag-filter-recurrent::after{
             content:'';
             display: block;
             width:55px;
