@@ -1,8 +1,22 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 interface IContanerProps{
     color:string,
 }
+
+const animate = keyframes`
+    0%{
+        transform: translateX(-100px);
+        opacity:0;
+    }
+    50%{
+        opacity: .3;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity 1;
+    }
+`;
 
 export const Container = styled.div <IContanerProps> `
     width: 32%;
@@ -41,6 +55,8 @@ export const Container = styled.div <IContanerProps> `
         bottom: 10px;
     }
 
+    animation: ${animate} .5s;
+
     @media(max-width: 770px){
         > span {
             font-size:14px;
@@ -56,6 +72,7 @@ export const Container = styled.div <IContanerProps> `
                 font-size: 16px;
             }
         }
+        
 
 
     }
@@ -78,6 +95,8 @@ export const Container = styled.div <IContanerProps> `
                 width: 1px;
             }
         }
+
+        animation: ${animate} .5s;
     }
 
 `;
