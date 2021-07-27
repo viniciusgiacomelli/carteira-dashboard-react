@@ -14,8 +14,8 @@ import { ThemeContext } from 'styled-components';
 
 import logoImg from '../../assets/logo.svg';
 
-import { useAuth } from '../hooks/auth';
-import { useTheme } from '../hooks/themes';
+import { useAuth } from '../../hooks/auth';
+import { useTheme } from '../../hooks/themes';
 
 import { 
     Container,

@@ -2,7 +2,7 @@ import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import GlobalStyles from './styles/GlobalStyles';
 
-import { useTheme } from './components/hooks/themes';
+import { useTheme } from './hooks/themes';
 
 import Routes from './routes';
 

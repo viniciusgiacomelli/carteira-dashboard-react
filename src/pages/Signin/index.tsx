@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 import Input from '../../components/Input';
 import Button from '../../components/Button';
 
-import { useAuth } from '../../components/hooks/auth';
+import { useAuth } from '../../hooks/auth';
 
 import logo from '../../assets/logo.svg';
 
@@ -49,6 +49,8 @@ const SignIn: React.FC = () => {
 
                 <Button type="submit">Acessar</Button>
             </Form>
+            <h1>Login: admin</h1>
+            <h1>Senha: admin</h1>
 
         </Container>
     );
