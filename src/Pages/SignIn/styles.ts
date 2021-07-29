@@ -10,6 +10,10 @@ export const Container = styled.div`
     align-items: center;
 
     background-color: ${props => props.theme.colors.primary};
+
+    #instruction{
+        color:${props => props.theme.colors.white};
+    }
 `;
 
 export const Logo = styled.div`

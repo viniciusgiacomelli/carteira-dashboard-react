@@ -16,12 +16,8 @@ const AuthProvider: React.FC = ({ children }) => {
     });
 
     const signIn = (email:string, password:string) => {
-        if(email === 'admin' && password === 'admin' ){
             localStorage.setItem('@minha-carteira:logged','true');
             setLogged(true);
-        }else{
-            alert('Senha ou usuário inválidos!');
-        }
     }
 
     const signOut = () =>{

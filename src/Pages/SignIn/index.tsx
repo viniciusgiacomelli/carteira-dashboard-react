@@ -37,20 +37,17 @@ const SignIn: React.FC = () => {
                 <Input
                     type="text"
                     placeholder="email"
-                    required
                     onChange={ (e) => setEmail(e.target.value)}
                 />
                 <Input
                     type="password"
                     placeholder="senha"
-                    required
                     onChange={ (e) => setPassword(e.target.value)}
                 />
 
                 <Button type="submit">Acessar</Button>
             </Form>
-            <h1>Login: admin</h1>
-            <h1>Senha: admin</h1>
+            <h2 id="instruction">Clique em Acessar</h2>
 
         </Container>
     );
