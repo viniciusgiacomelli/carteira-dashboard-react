@@ -18,7 +18,7 @@
   <a href="https://sites.google.com/view/viniciusgiacomelli">viniciusgiacomelli</a>
   <img src="https://github.com/Giacomellivinicius/carteira-dashboard-react/blob/main/Logo%20-%20conceito.png?raw=true" width="30px;" alt="" />
 </h3>
-[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/vinicius-giacomelli/)](https://www.linkedin.com/in/vinicius-giacomelli/)
+<a href="https://www.linkedin.com/in/vinicius-giacomelli/"/><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
 
 
 
