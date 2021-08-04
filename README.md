@@ -12,7 +12,8 @@
   <li>:rocket: Hosedagem no Netlify</li>
   </ul>
 <h2>Autor</h2>
-<h3>Vinicius Giacomelli</h3>
+<h3><img src="https://github.com/Giacomellivinicius/carteira-dashboard-react/blob/main/new2.jpeg?raw=true" width="100px;" alt="" />Vinicius Giacomelli</h3>
+<h4><img src=""/></h4>
 
 
 
