@@ -18,10 +18,11 @@
   <a href="https://sites.google.com/view/viniciusgiacomelli">viniciusgiacomelli</a>
   <img src="https://github.com/Giacomellivinicius/carteira-dashboard-react/blob/main/Logo%20-%20conceito.png?raw=true" width="30px;" alt="" />
 </h3>
-<a href="https://www.linkedin.com/in/vinicius-giacomelli/"/><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="https://www.linkedin.com/in/vinicius-giacomelli/" self="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
+<a href="mailto:giacomelli.vinicius@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white"/></a>
 
 
-
+<br/>
 <br/>
 <p> App desenvolvido durante o curso: <a href="https://www.udemy.com/course/react-e-typescript/">React e Typescript: Desenvolvendo um Dashboard</a> </p>
 <p> Ministrado pelo usuário: <a href="https://github.com/rodrigorgtic">Rodrigo Gonçalves Santana </a></p>
