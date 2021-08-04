@@ -11,9 +11,14 @@
   <li>:computer: Typescript e React </li>
   <li>:rocket: Hosedagem no Netlify</li>
   </ul>
-<h2>Autor</h2>
-<h3><img src="https://github.com/Giacomellivinicius/carteira-dashboard-react/blob/main/new2.jpeg?raw=true" width="100px;" alt="" />Vinicius Giacomelli</h3>
-<h4><img src=""/></h4>
+  <br/>
+<h2>:white_check_mark: Autor</h2>
+<h3>
+  <img src="https://github.com/Giacomellivinicius/carteira-dashboard-react/blob/main/new2.jpeg?raw=true" width="100px;" alt="" style="border-radius:50%; overflow:hidden" />
+  <a href="https://sites.google.com/view/viniciusgiacomelli">viniciusgiacomelli</a>
+  <img src="https://github.com/Giacomellivinicius/carteira-dashboard-react/blob/main/Logo%20-%20conceito.png?raw=true" width="30px;" alt="" />
+</h3>
+[![Linkedin](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white&link=https://www.linkedin.com/in/vinicius-giacomelli/)](https://www.linkedin.com/in/vinicius-giacomelli/)
 
 
 
