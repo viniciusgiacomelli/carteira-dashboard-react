@@ -15,7 +15,7 @@
 <h2>:white_check_mark: Autor</h2>
 <h3>
   <img src="https://github.com/Giacomellivinicius/carteira-dashboard-react/blob/main/new2.jpeg?raw=true" width="100px;" alt="" style="border-radius:50%; overflow:hidden" />
-  <a href="https://sites.google.com/view/viniciusgiacomelli">viniciusgiacomelli</a>
+  <h2>viniciusgiacomelli</h2>
   <img src="https://github.com/Giacomellivinicius/carteira-dashboard-react/blob/main/Logo%20-%20conceito.png?raw=true" width="30px;" alt="" />
 </h3>
 <a href="https://www.linkedin.com/in/vinicius-giacomelli/" self="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
