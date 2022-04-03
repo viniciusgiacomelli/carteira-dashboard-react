@@ -1,3 +1,44 @@
+<!--
+ --------------------------------
+| Meus parabéns! você encontrou  |
+| o easter egg do Garfield.      |
+| Qualquer bug neste código      |
+| passa a ser automaticamente    |
+| problema seu agora!            |
+ --------------------------------
+
+            _.++. .+.                                 
+          .'///|\Y/|\;                               
+         : :   _ | _ |                                
+        /  `-.' `:' `:                                 
+       /|i, :     ;   ;.                             
+      ,     |     |   |`\                            
+      ||Ii  :     |   |  ;                          
+      ;      \--gg;-gg; i:                           
+      ||Ii    `._,gg.'   |                               
+      '       .' `**'`. i;                               
+       `.\`   `. .'`..' /                            
+        |`-._      __.-'                              
+        :           `.                                
+       /i,\  ,        \                               
+      /    ; :         \                              
+     :Ii  _:  \         ;                            
+     ;   (     ;        :                              
+     :i'( _,  /         ;                           
+      ;. `"--'         /                             
+      :i\Ii'         .'                               
+      |  ;  :__.--:*"                                     
+      |Ii|  :  ;  :                                   
+      ;  |  |  |  |                                  
+     /Y  |  |  |  |                             
+ .=-'Y  /|  ;  |  |                                  
+:E    .' ;  L__:-***-.-***-.                             
+ `=--' .'       _   , ;   , ;                         
+      '----.__.__J--'"`*--'"
+
+
+-->
+
 # Carteira Dashboard
 
 ## :white_check_mark: Descrição do projeto:
