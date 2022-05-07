@@ -43,8 +43,8 @@
 
 ### :speech_balloon: Descrição do projeto:
 
-Um sistema de controle de fluxo de caixa com entradas a saídas apresentados de forma visual com gráficos.   
-*Aplicação de contexto de cores e autenticação. A aplicação não faz uso de Bancos de dados, os valores foram carregados de um arquivo mock de informações JSon*
+Um sistema de controle de fluxo de caixa com entradas a saídas apresentados de forma visual com gráficos. A aplicação possui os temas claro e escuro e um sistema de autenticação.   
+*A aplicação não faz uso de Bancos de dados, os valores carregados são apenas para exemplificar o funcionamento do serviço*
    
    
 ### :white_check_mark: Tecnologias empregadas:   
@@ -56,8 +56,11 @@ Um sistema de controle de fluxo de caixa com entradas a saídas apresentados de 
    
 [![Gif mostrando o sistema em funcionamento](https://github.com/Giacomellivinicius/carteira-dashboard-react/blob/main/dashboard-react.gif?raw=true)](https://giacomelli-dashboard.netlify.app/)
    
-### :globe_with_meridians: Veja o App funcionando neste link: https://giacomelli-dashboard.netlify.app/ 
+### :globe_with_meridians: Veja o App funcionando neste link: https://giacomelli-dashboard.netlify.app/   
+*Não é preciso preencher os dados, basta clicar em* **[ACESSAR]** :wink:    
 
+---   
+   
 App desenvolvido durante o curso: React e Typescript: Desenvolvendo um Dashboard   
 Ministrado pelo usuário: [Gonçalves Santana](https://github.com/rodrigorgtic"Rodrigo)   
 [![Badge Udemy](https://img.shields.io/badge/Udemy-5C2D91?style=for-the-badge&logo=Udemy&logoColor=white)](#)
