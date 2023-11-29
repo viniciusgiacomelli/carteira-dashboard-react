@@ -47,7 +47,7 @@ const SignIn: React.FC = () => {
 
                 <Button type="submit">Acessar</Button>
             </Form>
-            <h2 id="instruction">Clique em Acessar</h2>
+            <h2 id="instruction">Não precisa preencher. Basta clicar em Acessar</h2>
 
         </Container>
     );
